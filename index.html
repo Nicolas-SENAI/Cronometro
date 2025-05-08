@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cronômetro Configurável</title>
+  <link rel="stylesheet" href="/Cronometro/CSS/style.css">
+</head>
+<body>
+  <div id="timer">00:00:00</div>
+
+  <div id="lights">
+    <div class="light" id="greenLight"></div>
+    <div class="light" id="yellowLight"></div>
+    <div class="light" id="redLight"></div>
+  </div>
+
+  <button id="settingsButton">⚙️</button>
+
+  <div id="settings">
+    <h2>Configurações</h2>
+    <label>
+      Horas:
+      <input type="number" id="hoursInput" min="0" value="0">
+    </label>
+    <label>
+      Minutos:
+      <input type="number" id="minutesInput" min="0" value="1">
+    </label>
+    <label>
+      Hora de mudar para luz amarela (em minutos restantes):
+      <input type="number" id="yellowTimeInput" min="0" value="0">
+    </label>
+    <label>
+      Hora de mudar para luz vermelha (em minutos restantes):
+      <input type="number" id="redTimeInput" min="0" value="0">
+    </label>
+    <label>
+      Tamanho do Cronômetro:
+      <input type="range" id="sizeInput" min="10" max="30" value="18">
+    </label>
+    <button id="startButton">Iniciar</button>
+    <button id="restartButton">Reiniciar</button>
+  </div>
+
+  <script src="/Cronometro/JS/script.js"></script>
+</body>
+</html>

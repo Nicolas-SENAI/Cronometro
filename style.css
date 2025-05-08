@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  #timer {
+    font-size: 18vw;
+    text-align: center;
+    margin-top: 10vh;
+    user-select: none;
+    white-space: nowrap;
+  }
+  
+  #lights {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    gap: 5vw;
+  }
+  
+  .light {
+    border-radius: 50%;
+    background: gray;
+    width: 8vw;
+    height: 8vw;
+    transition: background 0.5s ease;
+  }
+  
+  #greenLight {
+    background: green;
+  }
+  
+  #settingsButton {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-size: 3vh;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #settings {
+    position: fixed;
+    bottom: 50px;
+    left: 10px;
+    background: #222;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    width: 200px;
+    font-size: 0.8rem;
+  }
+  
+  #settings label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6px;
+  }
+  
+  #startButton, #restartButton {
+    margin-top: 8px;
+    padding: 8px;
+    background: #555;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
